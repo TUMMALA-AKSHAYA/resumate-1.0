@@ -1,0 +1,1 @@
+# Resumate AI service package

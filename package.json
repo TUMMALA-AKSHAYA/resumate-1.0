@@ -1,0 +1,13 @@
+{
+  "name": "resumate-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "npm run build -w resumate-frontend",
+    "dev:frontend": "npm run dev -w resumate-frontend",
+    "dev:backend": "npm run dev -w resumate-backend"
+  }
+}
