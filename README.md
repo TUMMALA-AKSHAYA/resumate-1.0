@@ -13,7 +13,6 @@ An intelligent recruitment platform that streamlines hiring using AI-driven resu
   - [Admin Module](#admin-module)
 - [System Architecture](#-system-architecture)
 - [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
 - [Environment Variables](#-environment-variables)
 - [API Workflow](#-api-workflow)
@@ -192,35 +191,6 @@ Resumate provides:
 
 ---
 
-# 📂 Project Structure
-
-```bash
-resumate/
-│
-├── client/                     # Frontend Application
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── server/                     # Backend API
-│   ├── controllers/
-│   ├── routes/
-│   ├── middleware/
-│   ├── models/
-│   ├── uploads/
-│   └── server.js
-│
-├── ai-service/                 # AI/NLP Microservice
-│   ├── models/
-│   ├── services/
-│   ├── utils/
-│   └── app.py
-│
-├── database/                   # Database Configurations
-│
-├── README.md
-└── package.json
-```
 
 ---
 
