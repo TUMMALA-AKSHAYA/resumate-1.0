@@ -1,77 +1,149 @@
-# Resumate (MVP)
+# Resumate – AI-Based Resume Analysis & Recruitment Platform
 
-AI-assisted recruitment platform: **React** frontend, **Express** API, **Starlette** (ASGI) AI service, **MongoDB**.
+## Overview
 
-## Prerequisites
+Resumate is an AI-powered recruitment and resume analysis platform designed to simplify the hiring process for candidates, recruiters, and administrators. The platform provides resume building, ATS-based resume analysis, job management, and candidate tracking features in a modern web application.
 
-- Node.js 20+
-- Python 3.11+
-- MongoDB (local or Docker)
-- Optional: `OPENAI_API_KEY` for enhanced resume assists (rule-based fallback works without it)
+The project improves recruitment efficiency using AI, NLP, and automation techniques.
 
-## Quick start (three terminals)
+---
 
-1. **MongoDB** (or use Docker only for DB):
+## Features
 
-   ```bash
-   docker compose up mongo -d
-   ```
+### Candidate Module
+- User Authentication (Login/Register)
+- Resume Builder
+- Resume Upload & Parsing
+- ATS Score Analysis
+- Skill Extraction
+- Job Listings
+- Apply for Jobs
+- Resume Export (PDF/DOCX)
 
-2. **AI service** (`http://localhost:8000`):
+### Recruiter Module
+- Create and Manage Job Posts
+- View Applicants
+- Track Job Status
+- Recruitment Analytics Dashboard
+- Candidate Shortlisting
 
-   ```bash
-   cd ai-service
-   python -m venv .venv && source .venv/bin/activate
-   pip install -r requirements.txt
-   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-   ```
+### Admin Module
+- Manage Users
+- Monitor Jobs and Applications
+- Access Recruiter Features
+- System Analytics Dashboard
 
-   (Implemented with **Starlette** — lightweight ASGI — for broad Python version compatibility; endpoints are the same REST shape as a FastAPI service.)
+---
 
-3. **Backend** (`http://localhost:4000`):
+## Technologies Used
 
-   ```bash
-   cd backend
-   cp ../.env.example .env  # edit MONGODB_URI, JWT_SECRET, etc.
-   npm install
-   npm run dev
-   ```
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
 
-4. **Frontend** (`http://localhost:5173`):
+### Backend
+- Node.js
+- Express.js
 
-   ```bash
-   cd frontend
-   echo 'VITE_API_URL=http://localhost:4000/api' > .env
-   npm install
-   npm run dev
-   ```
+### Database
+- MongoDB
 
-   From the **repo root**, you can use npm workspaces: `npm install` then `npm run build` (builds the Vite app) or `npm run dev:frontend` / `npm run dev:backend`.
+### AI/NLP
+- Python
+- NLP-Based Resume Analysis
+- ATS Scoring System
 
-Create an account as **candidate** or **recruiter**. For an **admin** user, register then update `role` to `admin` in MongoDB (MVP) or use `npm run seed:admin` from `backend` if configured.
+---
 
-## Docker (API + AI + Mongo)
-
-```bash
-cp .env.example .env
-# Set JWT_SECRET; optionally OPENAI_API_KEY
-docker compose up --build
-```
-
-Run frontend locally with `VITE_API_URL=http://localhost:4000/api`.
-
-## Project layout
-
-- `frontend/` — Vite, React, Tailwind, Redux Toolkit
-- `backend/` — Express, Mongoose, JWT, local file uploads
-- `ai-service/` — Resume parse, ATS scoring, TF–IDF match, AI assists, PDF/DOCX export (**Starlette** + **uvicorn**)
-- `docs/deploy.md` — Production deployment notes
-
-## Git
-
-If `git` is unavailable in your environment, initialize locally:
+## Project Structure
 
 ```bash
-git init
-git remote add origin https://github.com/Chevva-Bhavanica/Resumate-project.git
+resumate/
+│
+├── client/        # Frontend
+├── server/        # Backend API
+├── ai-service/    # AI/NLP Services
+├── database/      # Database Configurations
+└── README.md
 ```
+
+---
+
+## Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd resumate
+```
+
+### Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Backend Setup
+
+```bash
+cd server
+npm install
+npm start
+```
+
+### AI Service Setup
+
+```bash
+cd ai-service
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the backend folder.
+
+```env
+PORT=4000
+MONGODB_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+AI_SERVICE_URL=http://127.0.0.1:8000
+```
+
+---
+
+## Core Functionalities
+
+- AI Resume Analysis
+- ATS Score Generation
+- Resume Parsing
+- Job Posting and Application Tracking
+- Role-Based Authentication
+- Resume Builder
+- Recruiter Dashboard
+- Admin Management System
+
+---
+
+## Future Enhancements
+
+- Advanced AI/ML Models
+- Interview Scheduling
+- AI Chatbot Support
+- Job Portal Integration
+- Mobile Application
+- Advanced Analytics
+
+---
+
+## Screenshots
+
+
+---
+
