@@ -430,16 +430,16 @@ Different dashboards for:
 # 📸 Screenshots
 
 ## Candidate Dashboard
-_Add screenshot here_
+![Candidate Dashboard Screenshot](assets/candidate-dashboard.png)
 
 ## Recruiter Dashboard
-_Add screenshot here_
+![Recruiter Dashboard Screenshot](assets/recruiter-dashboard.png)
 
 ## ATS Analysis Page
-_Add screenshot here_
+![ATS Analysis Page Screenshot](assets/ats-analysis.png)
 
 ## Admin Dashboard
-_Add screenshot here_
+![Admin Dashboard Screenshot](assets/admin-dashboard.png)
 
 ---
 
