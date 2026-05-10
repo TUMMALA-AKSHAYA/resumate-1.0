@@ -430,7 +430,8 @@ Different dashboards for:
 # 📸 Screenshots
 
 ## Candidate Dashboard
-![Candidate Dashboard Screenshot](assets/candidate-dashboard.png)
+<img width="1600" height="814" alt="image" src="https://github.com/user-attachments/assets/193f09ff-400c-4674-9030-38ba4214a387" />
+
 
 ## Recruiter Dashboard
 ![Recruiter Dashboard Screenshot](assets/recruiter-dashboard.png)
