@@ -430,17 +430,13 @@ Different dashboards for:
 # 📸 Screenshots
 
 ## Candidate Dashboard
-<img width="1600" height="814" alt="image" src="https://github.com/user-attachments/assets/193f09ff-400c-4674-9030-38ba4214a387" />
-
+<img width="1600" height="803" alt="image" src="https://github.com/user-attachments/assets/7205963b-d8f5-45cc-ab6a-8212a7de37f2" />
 
 ## Recruiter Dashboard
-![Recruiter Dashboard Screenshot](assets/recruiter-dashboard.png)
-
-## ATS Analysis Page
-![ATS Analysis Page Screenshot](assets/ats-analysis.png)
+<img width="1600" height="810" alt="image" src="https://github.com/user-attachments/assets/8911bda3-3e53-4dc2-abff-04b080b2937b" />
 
 ## Admin Dashboard
-![Admin Dashboard Screenshot](assets/admin-dashboard.png)
+<img width="1600" height="811" alt="image" src="https://github.com/user-attachments/assets/0972ddaa-dd56-44e8-ae0f-e24974615dfa" />
 
 ---
 
